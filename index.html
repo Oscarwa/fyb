@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fyb</title>
+  </head>
+  <body >
+    <footer style="position:fixed; bottom: 0px; text-align: right;">
+      <time></time>
+    </footer>
+    <script type="text/javascript">
+      setInterval(function() {
+        var time = document.getElementsByTagName('time')[0];
+        time.textContent = (new Date).toISOString().substring(0,19).replace('T', ' ');
+      }, 1000)
+    </script>
+  </body>
+</html>
